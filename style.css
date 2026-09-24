@@ -1,0 +1,108 @@
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background-color: #2f531f;
+    color: #f0eded;
+    line-height: 1.7;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #3d4e2e;
+    position: sticky;
+    top: 10px;
+    z-index: 100;
+    border-bottom: 1px solid #ffffff;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--verde-escuro);
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: var(--verde-salvia);
+}
+
+.menu a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: var(--texto);
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: var(--verde-salvia);
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 80px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* permite quebrar linha no celular */
+}
+
+.hero-texto {
+    flex: 1;
+    min-width: 280px;
+}
+
+.saudacao {
+    color: var(--verde-salvia);
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: var(--verde-escuro);
+    margin-bottom: 10px;
+}
+
+.profissao {
+    font-size: 20px;
+    color: var(--marrom);
+    margin-bottom: 20px;
+}
+
+.descricao {
+    color: var(--texto-suave);
+    margin-bottom: 30px;
+    max-width: 450px;
+}
+
+.botao {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: var(--verde-salvia);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 15px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.botao:hover {
+    background-color: var(--verde-escuro);
+    transform: translateY(-3px);
+}
+
+.hero-imagem img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid var(--creme-escuro);
+    box-shadow: 0 10px 30px rgb(22, 14, 14);
+}
